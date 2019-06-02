@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cafe Erie</title>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#"><img src="images/logo.jpg" height="60" width="60"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Reserve Space</a></li>
+                </ul> 
+                <span class="navbar-text">
+                    <a id="loginLink">Login</a>
+                </span>
+            </div>           
+        </div>      
+    </nav>
+
+    <div class="row row-content align-items-center" id="reserveTableForm">
+            <div class="col-8 mx-auto col-sm-6">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group-row">
+                                <label for="name" class="col-md-2 col-form-label">Full Name</label>
+                                <div class="form-check form-check-inline align-top col-md-4">
+                                    <input type="text" class="form-control" id="name" name="fullName" placeholder="Firstname Lastname"> 
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="form-group-row">
+                                <label for="numGuests" class="col-md-2 col-form-label">Number of Guests</label>
+                                <div class="form-check form-check-inline align-top col-md-4">
+                                    <input type="number" class="form-control" id="numGuests" name="guests" placeholder="Maximum of 10"> 
+                                </div>          
+                            </div>
+                            <br>
+
+                            <div class="form-group-row">
+                                <label for="date-input" class="col-md-2 col-form-label">Date</label>
+                                <div class="form-check form-check-inline align-top col-md-4">
+                                   <input type="date" class="form-control" value="2019-06-01" id="date">
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="form-group-row">
+                                <label for="time-input" class="col-md-2 col-form-label">Time</label>
+                                <div class="form-check form-check-inline align-top col-md-4">
+                                    <input type="time" class="form-control" value="12:00:00" id="time">
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="form-group-row">
+                                <label for="occasion" class="col-md-2 col-form-label">Occasion</label>
+                                <div class="form-check form-check-inline align-top col-md-4">
+                                    <input type="text" class="form-control" id="occasion" name="occasion" placeholder="e.g. Birthday, Study, etc."> 
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="form-group-row">
+                                <label for="email-input" class="col-md-2 col-form-label">Email</label>
+                                <div class="form-check form-check-inline align-top col-md-4">
+                                    <input type="email" class="form-control" id="email" placeholder="johndoe@gmail.com">
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="form-group-row">
+                                <label for="contact" class="col-md-2 col-form-label">Contact No.</label>
+                                <div class="form-check form-check-inline align-top col-md-4">
+                                    <input type="text" class="form-control" id="contact" name="contactNo" placeholder="8004124567"> 
+                                </div>          
+                            </div>
+                            <br>
+
+                            <div class="form-group row">
+                                <div class=" offset-md-2 col-md-8">
+                                    <button type="submit" class="btn btn-primary btn-lg" onclick="reserve()">Reserve</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        function reserve(){
+            alert("Thanks for reserving your space with us");
+        }
+    </script>
+</body>
+
+</html>
