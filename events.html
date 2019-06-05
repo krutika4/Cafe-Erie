@@ -13,7 +13,7 @@
 </head>
 
 <body class="events-body">
-    
+    <!-- Navigation bar -->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -27,12 +27,25 @@
                     <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./reserveSpace.html">Reserve Space</a></li>
                 </ul> 
-                <span class="navbar-text">
-                    <a id="loginLink">Login</a>
-                </span>
             </div>           
         </div>      
     </nav>
+
+    <!-- Jumbotron for displaying cafe name -->
+    <header class="jumbotron jumbotron-fluid row-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h1>Cafe Erie</h1>
+                    <p>Step in to Cafe Erie and enjoy your favorite coffee and snacks in a relaxed ambience, designed especially for you. Whether you need to sit back and relax, or a space to study for exams, or celebrate your special events, we have a space for everything you need!</p>
+                </div>
+                <div class="col-8 col-sm align-self-center">
+                    <img src="images/logo.jpg" class="img-fluid">                          
+                </div>
+               
+            </div>
+        </div>
+    </header>
 
     <div class="container">
         <div class="row">
@@ -84,6 +97,36 @@
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5 class="text">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./reserveSpace.html">Reserve Space</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5 class="text">Our Address</h5>
+                    <address>
+                      105 State Street<br>
+                      Erie, PA 16507<br>
+                      Tel: +1 (814)-921-5678<br>     
+                      Email ID: <a href="mailto:cafeerie@gmail.com">cafeerie@gmail.com</a>
+                   </address>
+                </div>
+                
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto text">
+                    <p>© Copyright 2019 Cafe Erie</p>
+                </div>
+           </div>
+        </div>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
